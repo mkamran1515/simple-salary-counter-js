@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Counter</title>
+    <!-- link css  -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="title_con">Employee Salary Counter</h2>
+        <div class="msg" id="msg">dummy message</div>
+        <div class="row">
+            <div>
+                <p>Set Hourly Rate  </p>
+                <input type="number" onkeyup="checkNum()" class="inputs" required="required" min="0" placeholder="$10" id="set_time"/>
+            </div>
+            <div>
+                <p>Total Hours in Month  </p>
+                <input type="number" class="inputs" onkeyup="checkNum()"  required="required" min="0" placeholder="200" id="total_work"/>
+            </div>
+        </div>
+        <!-- message result -->
+        <h2 class="title_con">Predicted Income</h2>
+        <div class="row">
+           <div>
+               <p>Annual Income</p> 
+               <input type="number" class="inputs" id="yearly_inc"  readonly="readonly"/>
+           </div> 
+           <div>
+               <p>Monthly Income</p>
+               <input type="number" class="inputs"  id="monthly_inc" readonly="readonly"/>
+           </div>    
+        </div>
+
+        <div class="row">
+            <div>
+                <p>Weekly Income</p>
+                <input type="number" class="inputs" id="weekly_inc"  readonly="readonly"/>
+           </div>     
+
+           <div>
+                <p>Daily Income</p>
+                <input type="number" class="inputs"  id="daily_inc" readonly="readonly"/>
+           </div>      
+        </div>
+
+        <div class="row">
+            <div>
+                <p>Hourly Income</p>
+                <input type="number" class="inputs"  id="hourly_inc" readonly="readonly"/>
+            </div>
+            <div>
+                <p>Income Per Minute</p>
+                <input type="number" class="inputs" id="minutes_inc"  readonly="readonly"/>
+            </div>        
+        </div>
+        <!-- note -->
+        <p class="note"><b>Note:</b> Annual salary is average salary estimated if person continues to work same hours every month.</p>
+  </div>
+
+    <!-- script file  -->
+    <script src="script.js"></script>
+</body>
+</html>
